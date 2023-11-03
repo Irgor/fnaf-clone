@@ -1,0 +1,155 @@
+.container {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    mix-blend-mode: exclusion;
+
+    .col-menu {
+        display: flex;
+        flex-direction: column;
+        font-size: 50px;
+        margin-left: 16%;
+        gap: 20px;
+
+        span {
+            user-select: none;
+            cursor: default;
+            width: max-content;;
+        }
+    }
+
+    .title {
+        margin-top: 6%;
+    }
+
+    .actions {
+        margin-top: 10%;
+
+        span {
+            transition: all .2s;
+            cursor: pointer;
+
+            &:hover {
+                color: gray;
+                text-shadow: 4px 4px 4px rgba(255, 255, 255, .2);
+            }
+        }
+    }
+
+    .fridge {
+        user-select: none;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 100vh;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        img {
+            height: 110%;
+            margin-top: 22%;
+        }
+
+        opacity: .2;
+
+        transition: all .1s;
+        animation: fridge 3s infinite;
+    }
+}
+
+.noise {
+    position: absolute;
+    top: -500px;
+    right: -500px;
+    bottom: -500px;
+    left: -500px;
+    background: transparent url(https://www.dropbox.com/s/h7ab1c82ctzy83n/noise.png?raw=1) 0 0;
+    background-size: 320px 320px;
+    opacity: .35;
+    animation: noise 1s steps(8, end) infinite both;
+}
+
+@keyframes noise {
+    0% {
+        transform: translateX(0px, 0px);
+    }
+
+    10% {
+        transform: translate(-100px, 100px);
+    }
+
+    20% {
+        transform: translate(150px, -100px);
+    }
+
+    30% {
+        transform: translate(-100px, 100px);
+    }
+
+    40% {
+        transform: translate(100px, -150px);
+    }
+
+    50% {
+        transform: translate(-100px, 200px);
+    }
+
+    60% {
+        transform: translate(-200px, -100px);
+    }
+
+    70% {
+        transform: translateY(50px, 100px);
+    }
+
+    80% {
+        transform: translate(100px, -150px);
+    }
+
+    90% {
+        transform: translate(0px, 200px);
+    }
+
+    100% {
+        transform: translate(-100px, 100px);
+    }
+}
+
+@keyframes fridge {
+    0% {
+        opacity: .2;
+    }
+
+    50% {
+        opacity: .2;
+    }
+    54% {
+        opacity: .5;
+    }
+    55% {
+        opacity: .2;
+    }
+
+    65% {
+        opacity: .2;
+    }
+    66% {
+        opacity: .5;
+    }
+    67% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: .2;
+    }
+}

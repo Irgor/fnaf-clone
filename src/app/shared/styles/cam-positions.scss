@@ -1,0 +1,64 @@
+.c1a {
+    left: 50%;
+    transform: translateX(calc(-80px));
+}
+
+.c2a {
+    left: 50%;
+    top: 0px;
+    transform: translateX(calc(-86px)) translateY(calc(240px));
+}
+
+.c4a {
+    left: 50%;
+    top: 0px;
+    transform: translateX(calc(65px)) translateY(calc(240px));
+}
+
+.c1b {
+    left: 50%;
+    top: 42px;
+    transform: translateX(calc(-80px - 20%)) translateY(10px);
+}
+
+.c2b {
+    left: 50%;
+    top: 42px;
+    transform: translateX(calc(-86px)) translateY(calc(240px + 4px));
+}
+
+.c4b {
+    left: 50%;
+    top: 42px;
+    transform: translateX(calc(65px)) translateY(calc(240px + 4px));
+}
+
+.c1c {
+    left: 50%;
+    top: 42px;
+    transform: translateX(calc(-270%)) translateY(calc(42px * 2 + 10px));
+}
+
+.c3 {
+    left: 50%;
+    top: 0px;
+    transform: translateX(calc(-290%)) translateY(calc(240px));
+}
+
+.c5 {
+    left: 50%;
+    top: 0px;
+    transform: translateX(calc(-390%)) translateY(calc(140%));
+}
+
+.c6 {
+    left: 50%;
+    top: 0px;
+    transform: translateX(calc(280%)) translateY(calc(530%));
+}
+
+.c7 {
+    left: 50%;
+    top: 0px;
+    transform: translateX(calc(280%)) translateY(calc(200%));
+}

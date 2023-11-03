@@ -1,0 +1,28 @@
+<div class="game" #game>
+
+    <div class="screen">
+        <img [src]="actualImage" alt="" #screen>
+    </div>
+
+    <div class="bottom">
+        <div class="infos">
+            <div class="power">
+                Power left: <span class="value">98%</span>
+            </div>
+
+            <div class="usage">
+                <span>
+                    Usage:
+                </span>
+
+                <div *ngFor="let usage of getUses()" class="usage-item"></div>
+            </div>
+        </div>
+
+        <div class="cam-access">
+            <img src="../../../assets/images/double-arrow.png" alt="">
+        </div>
+    </div>
+
+    <app-cams *ngIf="false"></app-cams>
+</div>

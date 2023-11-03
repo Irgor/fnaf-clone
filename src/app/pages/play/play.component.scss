@@ -1,0 +1,99 @@
+.game {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+
+    .screen {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 150%;
+            height: 100%;
+            margin-left: -25%;
+            transition: all .4s;
+        }
+    }
+
+    .bottom {
+        position: absolute;
+        color: white;
+        bottom: 20px;
+        left: 20px;
+        font-size: 24px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 40px;
+
+        .infos {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: max-content;
+
+            .power {
+                font-size: 24px;
+
+                span.value {
+                    font-size: 32px;
+                }
+            }
+
+            .usage {
+                display: flex;
+                flex-direction: row;
+                gap: 2px;
+                align-items: baseline;
+
+                span {
+                    margin-right: 5px;
+                }
+
+                .usage-item {
+                    width: 20px;
+                    height: 30px;
+                    background-color: #1ca914;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 100%;
+                        width: 5px;
+                        background-color: green;
+                    }
+                }
+            }
+        }
+
+        .cam-access {
+            cursor: pointer;
+            width: 40%;
+            height: 60px;
+            border-radius: 8px;
+            border: 4px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .2s;
+
+            img {
+                width: 60%;
+                height: 78%;
+                filter: contrast(0.5);
+            }
+
+            &:hover {
+                box-shadow: 6px 6px 8px rgba(212, 212, 212, .2);
+            }
+        }
+    }
+
+
+}
